@@ -1,0 +1,109 @@
+.carsList {
+  width: 100%;
+  display: flex;
+  gap: 48px 32px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.carsItem {
+  display: flex;
+  flex-direction: column;
+  width: 276px;
+  height: 424px;
+}
+.imgWrapper {
+  position: relative;
+  width: 276px;
+  height: 268px;
+
+  margin-bottom: 16px;
+}
+.imgWrapper::after {
+  border-radius: 14px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  pointer-events: none;
+}
+.carImg {
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.favoriteButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+  border: transparent;
+  background: transparent;
+}
+.favoriteIcon {
+  transition: fill 250ms ease;
+  fill: transparent;
+  stroke: var(--badges-color);
+}
+.isFavorite {
+  fill: var(--button-color);
+  stroke: var(--button-color);
+}
+.carNameWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.carName {
+  font-weight: 500;
+  line-height: 125%;
+  color: var(--main-color);
+  font-size: 16px;
+}
+.carNameSpan {
+  color: var(--button-color);
+}
+.carPrice {
+  font-weight: 500;
+  line-height: 125%;
+  color: var(--main-color);
+  font-size: 16px;
+}
+.carAddress {
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--gray-color);
+  margin-bottom: 4px;
+}
+.carDetails {
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--gray-color);
+  margin-bottom: auto;
+}
+.readMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px 89px;
+  width: 276px;
+  height: 44px;
+  background: var(--button-color);
+  transition: background 250ms ease;
+  font-family: var(--font-family);
+  font-weight: 600;
+  line-height: 125%;
+  color: var(--white-color);
+}
+.readMore:focus,
+.readMore:hover {
+  background: var(--button-hover-color);
+}

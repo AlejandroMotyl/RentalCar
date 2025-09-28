@@ -1,0 +1,44 @@
+.heroBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/public/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 436px;
+}
+.title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120%;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+.subTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px 70px;
+  max-width: 276px;
+  max-height: 44px;
+  font-weight: 600;
+  line-height: 125%;
+  color: var(--white-color);
+  background: var(--button-color);
+  transition: background 250ms ease;
+}
+.link:hover,
+.link:focus {
+  background: var(--button-hover-color);
+}

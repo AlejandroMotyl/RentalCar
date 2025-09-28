@@ -1,0 +1,84 @@
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 84px;
+  display: flex;
+  column-gap: 72px;
+  padding-bottom: 104px;
+}
+
+.image {
+  border: 1px solid #000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  width: 640px;
+  height: 512px;
+  margin-bottom: 40px;
+}
+
+.detailsWrapper {
+  max-width: 488px;
+  padding-top: 20px;
+}
+
+.nameWrapper {
+  margin-bottom: 68px;
+}
+.name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main-color);
+  margin-bottom: 8px;
+}
+.nameId {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--gray-color);
+  margin-left: 16px;
+}
+.address {
+  font-weight: 500;
+  line-height: 125%;
+  color: var(--main-color);
+  margin-bottom: 16px;
+}
+.mileage {
+  margin-left: 16px;
+}
+.rentalPrice {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--button-color);
+  margin-bottom: 32px;
+}
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color);
+}
+.lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 110px;
+}
+.listTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.listItem {
+  display: flex;
+  column-gap: 2px;
+}
